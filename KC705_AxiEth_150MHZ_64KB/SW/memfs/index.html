@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <title> Xilinx WebServer Demo </title>
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <script>
+  </script>
+</head>
+
+<body>
+
+<img src="images/logo.gif" style="padding-left:20px"></img>
+
+<div id="container">
+<b class="rtop">
+  <b class="r1"></b> <b class="r2"></b> <b class="r3"></b> <b class="r4"></b>
+</b>
+
+<h1>Xilinx Web Server Demo</h1>
+
+<p> Hello! This is a demonstration of a simple embedded webserver created using lwIP. Using the lwIP networking stack, a webserver can be easily embedded into your software application. A webserver provides an easy method to control or monitor the embedded platform via an Internet browser. </p>
+
+<h2> Documentation </h2>
+<p> Documentation on how to setup a webserver using lwIP is available <a href="xapp1026.pdf">here.</a></p>
+
+<h2> Controlling the Embedded System </h2>
+<p>
+This example is intended to illustrate how the functionality of the embedded system can be controlled from the browser.
+Here, the <a href="C:\xapp1026_13_1\memfs\images\board.jpg" onclick="return popup('C:\xapp1026_13_1\memfs\images\board.jpg')">LED's on the board</a> can be switched on or off by clicking on the 'Toggle LEDs' button.
+</p>
+<div id="led_results">
+<p><span style="background:#ffffaa">LEDs are now OFF.</span></p>
+</div>
+<form class="forms" id="led_form" method="post" action="cmd/led">
+<input type="submit" value="Toggle LEDs" disabled="true"></input>
+</form>
+
+<h2> External Links </h2>
+<p>
+<i> (Note that these links point to locations not served by the embedded webserver)</i>
+<ul>
+<li> <a href="http://savannah.nongnu.org/projects/lwip/">lwIP Home Page</a> </li>
+<li> <a href="http://www.xilinx.com">Xilinx</a></li>
+<li> This webpage utilizes <a href="http://developer.yahoo.com/yui/">YUI</a> JavaScript libraries.
+</ul>
+</p>
+
+<b class="rbottom">
+  <b class="r4"></b> <b class="r3"></b> <b class="r2"></b> <b class="r1"></b>
+</b>
+</div>
+  <script type="text/javascript" src="yui/yahoo.js"></script>
+  <script type="text/javascript" src="yui/dom.js"></script>
+  <script type="text/javascript" src="yui/event.js"></script>
+  <script type="text/javascript" src="yui/conn.js"></script>
+  <script type="text/javascript" src="yui/anim.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

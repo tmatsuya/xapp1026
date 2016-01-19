@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1411380502">
+  <File Type="RDS-DCP" Name="mb_subsystem_wrapper.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL-PB" Name="mb_subsystem_wrapper_utilization_synth.pb"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RDS-PROPCONSTRS" Name="mb_subsystem_wrapper_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="mb_subsystem_wrapper.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="RDS-RDS" Name="mb_subsystem_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="mb_subsystem_wrapper_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mb_subsystem_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="mb_subsystem_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-HWDEF" Name="mb_subsystem_wrapper.hwdef"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/mb_subsystem.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/hdl/mb_subsystem_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mig_a.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_microblaze_0_0/mb_subsystem_microblaze_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_ilmb_v10_1/mb_subsystem_ilmb_v10_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_dlmb_v10_0/mb_subsystem_dlmb_v10_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_clk_wiz_0_0/mb_subsystem_clk_wiz_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_blk_mem_gen_0_1/mb_subsystem_blk_mem_gen_0_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_bram_ctrl_0_0/mb_subsystem_axi_bram_ctrl_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_timer_0_0/mb_subsystem_axi_timer_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_mdm_1_0/mb_subsystem_mdm_1_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_microblaze_0_xlconcat_0/mb_subsystem_microblaze_0_xlconcat_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_microblaze_0_axi_intc_0/mb_subsystem_microblaze_0_axi_intc_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_microblaze_0_axi_periph_0/mb_subsystem_microblaze_0_axi_periph_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_uartlite_0_0/mb_subsystem_axi_uartlite_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_lmb_bram_0/mb_subsystem_lmb_bram_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_ilmb_bram_if_cntlr_1/mb_subsystem_ilmb_bram_if_cntlr_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_ethernet_0_dma_0/mb_subsystem_axi_ethernet_0_dma_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_dlmb_bram_if_cntlr_0/mb_subsystem_dlmb_bram_if_cntlr_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_proc_sys_reset_1_0/mb_subsystem_proc_sys_reset_1_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_mem_intercon_1/mb_subsystem_axi_mem_intercon_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_ethernet_0_0/mb_subsystem_axi_ethernet_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mig_b.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mb_subsystem_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/system.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2013"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

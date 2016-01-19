@@ -1,0 +1,368 @@
+#-----------------------------------------------------------
+# Vivado v2014.3 (64-bit)
+# SW Build 1018564 on Mon Sep 15 19:04:16 MDT 2014
+# IP Build 1018438 on Mon Sep 15 16:10:11 MDT 2014
+# Start of session at: Tue Sep 23 10:47:00 2014
+# Process ID: 22280
+# Log file: C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/vivado.log
+# Journal file: C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/PROJECT_FOR_RELEASE/KC705_150MHZ_32KB/project_150MHz' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.3/data/ip'.
+open_project: Time (s): cpu = 00:01:16 ; elapsed = 00:00:47 . Memory (MB): peak = 835.469 ; gain = 280.070
+open_bd_design {C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd}
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:axi_ethernet:6.2 - axi_ethernet_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_ethernet_0_dma
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.2 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:5.1 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:microblaze:9.4 - microblaze_0
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:mig_7series:2.2 - mig_7series_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s04_regslice
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s04_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s03_regslice
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s03_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s02_regslice
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s02_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.2 - lmb_bram
+Successfully read diagram <mb_subsystem> from BD file <C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd>
+open_bd_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:39 . Memory (MB): peak = 896.941 ; gain = 61.473
+startgroup
+set_property -dict [list CONFIG.C_CACHE_BYTE_SIZE {65536} CONFIG.C_DCACHE_BYTE_SIZE {65536}] [get_bd_cells microblaze_0]
+endgroup
+validate_bd_design
+Adding component instance block -- xilinx.com:ip:axi_ethernet_buffer:2.0 - eth_buf
+Adding component instance block -- xilinx.com:ip:tri_mode_ethernet_mac:8.3 - eth_mac
+Successfully read diagram <bd_0> from BD file <c:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_ethernet_0_0/bd_0/bd_0.bd>
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [xilinx.com:ip:microblaze:9.4-14] /microblaze_0: The D-cache cacheable segment 0x80000000 - 0xBFFFFFFF does not include the M_AXI_DC segment 0xC0000000-0xC000FFFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue change user assigned parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:9.4-14] /microblaze_0: The I-cache cacheable segment 0x80000000 - 0xBFFFFFFF does not include the M_AXI_IC segment 0xC0000000-0xC000FFFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue change user assigned parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR, or modify the address map.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+validate_bd_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:32 . Memory (MB): peak = 1096.398 ; gain = 68.355
+save_bd_design
+Wrote  : <C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+Adding component instance block -- xilinx.com:ip:axi_ethernet_buffer:2.0 - eth_buf
+Adding component instance block -- xilinx.com:ip:tri_mode_ethernet_mac:8.3 - eth_mac
+Successfully read diagram <bd_0> from BD file <c:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_ethernet_0_0/bd_0/bd_0.bd>
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [xilinx.com:ip:microblaze:9.4-14] /microblaze_0: The D-cache cacheable segment 0x80000000 - 0xBFFFFFFF does not include the M_AXI_DC segment 0xC0000000-0xC000FFFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue change user assigned parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:9.4-14] /microblaze_0: The I-cache cacheable segment 0x80000000 - 0xBFFFFFFF does not include the M_AXI_IC segment 0xC0000000-0xC000FFFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue change user assigned parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR, or modify the address map.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+Generated Block Design Tcl file C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/hw_handoff/mb_subsystem_bd.tcl
+Exporting to file C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/hw_handoff/mb_subsystem.hwh
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_bram_porta_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_bram_portb_ADDR'(16) - Only lower order bits will be connected.
+Verilog Output written to : mb_subsystem.v
+Verilog Output written to : mb_subsystem_wrapper.v
+Wrote  : <C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_microblaze_0_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'mb_subsystem_microblaze_0_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_mig_7series_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mb_subsystem_mig_7series_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_dlmb_v10_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_ilmb_v10_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_dlmb_bram_if_cntlr_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_ilmb_bram_if_cntlr_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_lmb_bram_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_microblaze_0_axi_intc_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_microblaze_0_xlconcat_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_mdm_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_proc_sys_reset_1_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'mb_subsystem_proc_sys_reset_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_axi_timer_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_axi_uartlite_0_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'mb_subsystem_axi_uartlite_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_axi_bram_ctrl_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_blk_mem_gen_0_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_axi_ethernet_0_0'. Target already exists and is up to date.
+Verilog Output written to : bd_0.v
+Verilog Output written to : bd_0_wrapper.v
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_axi_ethernet_0_0/bd_0/bd_0_eth_buf_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'mb_subsystem_axi_ethernet_0_0/bd_0/bd_0_eth_buf_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block eth_buf .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_axi_ethernet_0_0/bd_0/bd_0_eth_mac_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'mb_subsystem_axi_ethernet_0_0/bd_0/bd_0_eth_mac_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block eth_mac .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ethernet_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_axi_ethernet_0_dma_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ethernet_0_dma .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_clk_wiz_0_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'mb_subsystem_clk_wiz_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_xbar_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_xbar_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s00_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/s00_regslice .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s00_data_fifo_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/s00_data_fifo .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s01_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/s01_regslice .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s01_data_fifo_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/s01_data_fifo .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s02_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/s02_regslice .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s02_data_fifo_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/s02_data_fifo .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s03_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s03_couplers/s03_regslice .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s03_data_fifo_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s03_couplers/s03_data_fifo .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s04_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s04_couplers/s04_regslice .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s04_data_fifo_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s04_couplers/s04_data_fifo .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_m00_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/m00_regslice .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_m01_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/m01_regslice .
+Adding component instance block -- xilinx.com:ip:axi_ethernet_buffer:2.0 - eth_buf
+Adding component instance block -- xilinx.com:ip:tri_mode_ethernet_mac:8.3 - eth_mac
+Successfully read diagram <bd_0> from BD file <c:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_ethernet_0_0/bd_0/bd_0.bd>
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [BD 41-1284] Ignoring parameter BOARD.ASSOCIATED_PARAM for port /phy_rst_n
+WARNING: [xilinx.com:ip:microblaze:9.4-14] /microblaze_0: The D-cache cacheable segment 0x80000000 - 0xBFFFFFFF does not include the M_AXI_DC segment 0xC0000000-0xC000FFFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue change user assigned parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:9.4-14] /microblaze_0: The I-cache cacheable segment 0x80000000 - 0xBFFFFFFF does not include the M_AXI_IC segment 0xC0000000-0xC000FFFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue change user assigned parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR, or modify the address map.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+Generated Block Design Tcl file C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/hw_handoff/mb_subsystem_bd.tcl
+Exporting to file C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/hw_handoff/mb_subsystem.hwh
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_bram_porta_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_bram_portb_ADDR'(16) - Only lower order bits will be connected.
+Verilog Output written to : mb_subsystem.v
+Verilog Output written to : mb_subsystem_wrapper.v
+Wrote  : <C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_microblaze_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_mig_7series_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mb_subsystem_mig_7series_0_0'...
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'mb_subsystem_mig_7series_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_dlmb_v10_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_ilmb_v10_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_dlmb_bram_if_cntlr_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_ilmb_bram_if_cntlr_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_lmb_bram_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_microblaze_0_axi_intc_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_microblaze_0_xlconcat_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_mdm_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_proc_sys_reset_1_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'mb_subsystem_proc_sys_reset_1_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'mb_subsystem_proc_sys_reset_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_axi_timer_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_axi_uartlite_0_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'mb_subsystem_axi_uartlite_0_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'mb_subsystem_axi_uartlite_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_axi_bram_ctrl_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_blk_mem_gen_0_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_axi_ethernet_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'bd_0' - hence not re-generating.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ethernet_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_axi_ethernet_0_dma_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ethernet_0_dma .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_clk_wiz_0_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'mb_subsystem_clk_wiz_0_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'mb_subsystem_clk_wiz_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_xbar_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'mb_subsystem_xbar_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s00_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/s00_regslice .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s00_data_fifo_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/s00_data_fifo .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s01_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/s01_regslice .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s01_data_fifo_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/s01_data_fifo .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s02_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/s02_regslice .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s02_data_fifo_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/s02_data_fifo .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s03_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s03_couplers/s03_regslice .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s03_data_fifo_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s03_couplers/s03_data_fifo .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s04_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s04_couplers/s04_regslice .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_s04_data_fifo_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s04_couplers/s04_data_fifo .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_m00_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/m00_regslice .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mb_subsystem_m01_regslice_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/m01_regslice .
+[Tue Sep 23 10:59:04 2014] Launched synth_1...
+Run output will be captured here: C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.runs/synth_1/runme.log
+[Tue Sep 23 10:59:04 2014] Launched impl_1...
+Run output will be captured here: C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:02:24 ; elapsed = 00:05:32 . Memory (MB): peak = 1227.391 ; gain = 95.789
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2142 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.3
+Loading clock regions from C:/Xilinx/Vivado/2014.3/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.3/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.3/data/parts/xilinx/kintex7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.3/data\parts/xilinx/kintex7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.3/data\parts/xilinx/kintex7/kintex7/xc7k325t/ffg900/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.3/data\./parts/xilinx/kintex7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.3/data\parts/xilinx/kintex7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.gaxi_arvld.rach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.gaxi_arvld.rach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.gawvld_pkt_fifo.wach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.gawvld_pkt_fifo.wach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.gaxi_arvld.rach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.gaxi_arvld.rach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.gaxi_arvld.rach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.gaxi_arvld.rach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.gawvld_pkt_fifo.wach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.gawvld_pkt_fifo.wach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.gawvld_pkt_fifo.wach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.gawvld_pkt_fifo.wach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s04_couplers/s04_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s04_couplers/s04_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s04_couplers/s04_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s04_couplers/s04_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s04_couplers/s04_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.gaxi_arvld.rach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s04_couplers/s04_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.gaxi_arvld.rach_pkt_reg_slice/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s04_couplers/s04_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s04_couplers/s04_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register mb_subsystem_i/axi_mem_intercon/s04_couplers/s04_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and mb_subsystem_i/axi_mem_intercon/s04_couplers/s04_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+Parsing XDC File [c:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/.Xil/Vivado-22280-XHDKATTAD30/dcp/mb_subsystem_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mdm_1_0/mb_subsystem_mdm_1_0.xdc:50]
+INFO: [Timing 38-2] Deriving generated clocks [C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mdm_1_0/mb_subsystem_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 2253.516 ; gain = 563.141
+Finished Parsing XDC File [c:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/.Xil/Vivado-22280-XHDKATTAD30/dcp/mb_subsystem_wrapper_early.xdc]
+Parsing XDC File [c:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/.Xil/Vivado-22280-XHDKATTAD30/dcp/mb_subsystem_wrapper.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'sys_clk_pin' completely overrides clock 'sys_clk'. [C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/constrs_1/new/system.xdc:9]
+Finished Parsing XDC File [c:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/.Xil/Vivado-22280-XHDKATTAD30/dcp/mb_subsystem_wrapper.xdc]
+Parsing XDC File [c:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/.Xil/Vivado-22280-XHDKATTAD30/dcp/mb_subsystem_wrapper_late.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_0_eth_buf_0.xdc:65]
+Finished Parsing XDC File [c:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/.Xil/Vivado-22280-XHDKATTAD30/dcp/mb_subsystem_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:41 ; elapsed = 00:00:40 . Memory (MB): peak = 2302.746 ; gain = 38.453
+Restored from archive | CPU: 43.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:41 ; elapsed = 00:00:40 . Memory (MB): peak = 2302.746 ; gain = 38.453
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'mb_subsystem_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/ipshared/xilinx.com/microblaze_v9_4/4853bf7a/data/mb_bootloop_le.elf 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 889 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  IOBUFDS_DCIEN => IOBUFDS_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, INV, OBUFTDS_DCIEN, OBUFTDS_DCIEN): 8 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 64 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 82 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 535 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 6 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 160 instances
+
+open_run: Time (s): cpu = 00:03:04 ; elapsed = 00:02:49 . Memory (MB): peak = 2433.359 ; gain = 1203.637
+file mkdir C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk
+file copy -force C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.runs/impl_1/mb_subsystem_wrapper.sysdef C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk/mb_subsystem_wrapper.hdf
+
+file copy -force C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.runs/impl_1/mb_subsystem_wrapper.sysdef C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk/mb_subsystem_wrapper.hdf
+
+launch_sdk -workspace C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk -hwspec C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk/mb_subsystem_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk -hwspec C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk/mb_subsystem_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 23 12:19:29 2014...

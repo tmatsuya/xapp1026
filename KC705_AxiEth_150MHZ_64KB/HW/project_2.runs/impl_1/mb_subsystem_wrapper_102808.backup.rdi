@@ -1,0 +1,639 @@
+#-----------------------------------------------------------
+# Vivado v2013.3 (64-bit)
+# SW Build 329390 on Wed Oct 16 18:37:02 MDT 2013
+# IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
+# Start of session at: Wed Dec 11 03:24:09 2013
+# Process ID: 102808
+# Log file: C:/xilinx_work/kc705_lwip_design/project_2/project_2.runs/impl_1/mb_subsystem_wrapper.rdi
+# Journal file: C:/xilinx_work/kc705_lwip_design/project_2/project_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: Implementation
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Device 21-36] Loading parts and site information from G:/Xilinx/Vivado/2013.3/data/parts/arch.xml
+Parsing RTL primitives file [G:/Xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [G:/Xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source mb_subsystem_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 869 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2013.3
+Loading clock regions from G:/Xilinx/Vivado/2013.3/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockRegion.xml
+Loading clock buffers from G:/Xilinx/Vivado/2013.3/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockBuffers.xml
+Loading clock placement rules from G:/Xilinx/Vivado/2013.3/data/parts/xilinx/kintex7/ClockPlacerRules.xml
+Loading package pin functions from G:/Xilinx/Vivado/2013.3/data\parts/xilinx/kintex7/PinFunctions.xml...
+Loading package from G:/Xilinx/Vivado/2013.3/data\parts/xilinx/kintex7/kintex7/xc7k325t/ffg900/Package.xml
+Loading io standards from G:/Xilinx/Vivado/2013.3/data\./parts/xilinx/kintex7/IOStandards.xml
+Loading device configuration modes from G:/Xilinx/Vivado/2013.3/data\parts/xilinx/kintex7/ConfigModes.xml
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Common 17-78] Attempting to get a license: Internal_bitstream
+WARNING: [Common 17-301] Failed to get a license: Internal_bitstream
+Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_microblaze_0_0/mb_subsystem_microblaze_0_0.xdc] for cell 'mb_subsystem_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_microblaze_0_0/mb_subsystem_microblaze_0_0.xdc] for cell 'mb_subsystem_i/microblaze_0/U0'
+Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc] for cell 'mb_subsystem_i/mig_7series_0'
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.sample_timer_clr_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.sample_timer_en_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_reg_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_5' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_4' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_3' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_2' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[0]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[1]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[2]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[3]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[4]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[5]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[6]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[7]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[8]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[9]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[10]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[11]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+Finished Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc] for cell 'mb_subsystem_i/mig_7series_0'
+Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0_board.xdc] for cell 'mb_subsystem_i/mig_7series_0'
+Finished Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0_board.xdc] for cell 'mb_subsystem_i/mig_7series_0'
+Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_dlmb_v10_0/mb_subsystem_dlmb_v10_0.xdc] for cell 'mb_subsystem_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_dlmb_v10_0/mb_subsystem_dlmb_v10_0.xdc] for cell 'mb_subsystem_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_ilmb_v10_1/mb_subsystem_ilmb_v10_1.xdc] for cell 'mb_subsystem_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_ilmb_v10_1/mb_subsystem_ilmb_v10_1.xdc] for cell 'mb_subsystem_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_microblaze_0_axi_intc_0/mb_subsystem_microblaze_0_axi_intc_0.xdc] for cell 'mb_subsystem_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_microblaze_0_axi_intc_0/mb_subsystem_microblaze_0_axi_intc_0.xdc] for cell 'mb_subsystem_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_proc_sys_reset_1_0/mb_subsystem_proc_sys_reset_1_0_board.xdc] for cell 'mb_subsystem_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_proc_sys_reset_1_0/mb_subsystem_proc_sys_reset_1_0_board.xdc] for cell 'mb_subsystem_i/proc_sys_reset_1/U0'
+Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_proc_sys_reset_1_0/mb_subsystem_proc_sys_reset_1_0.xdc] for cell 'mb_subsystem_i/proc_sys_reset_1/U0'
+INFO: [Vivado 12-1399] There are no top level ports directly connected to pins of cell 'mb_subsystem_i/proc_sys_reset_1/U0', returning the pins matched for query '[get_ports ext_reset_in]' of cell 'mb_subsystem_i/proc_sys_reset_1/U0'. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_proc_sys_reset_1_0/mb_subsystem_proc_sys_reset_1_0.xdc:55]
+Resolution: The get_ports call is being converted to a get_pins call as there is no direct connection to a top level port. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_proc_sys_reset_1_0/mb_subsystem_proc_sys_reset_1_0.xdc] for cell 'mb_subsystem_i/proc_sys_reset_1/U0'
+Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_timer_0_0/mb_subsystem_axi_timer_0_0.xdc] for cell 'mb_subsystem_i/axi_timer_0/U0'
+Finished Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_timer_0_0/mb_subsystem_axi_timer_0_0.xdc] for cell 'mb_subsystem_i/axi_timer_0/U0'
+Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_uartlite_0_0/mb_subsystem_axi_uartlite_0_0_board.xdc] for cell 'mb_subsystem_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_uartlite_0_0/mb_subsystem_axi_uartlite_0_0_board.xdc] for cell 'mb_subsystem_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_uartlite_0_0/mb_subsystem_axi_uartlite_0_0.xdc] for cell 'mb_subsystem_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_uartlite_0_0/mb_subsystem_axi_uartlite_0_0.xdc] for cell 'mb_subsystem_i/axi_uartlite_0/U0'
+Parsing XDC File [C:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [C:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/constrs_1/new/system.xdc]
+Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_microblaze_0_axi_intc_0/mb_subsystem_microblaze_0_axi_intc_0_clocks.xdc] for cell 'mb_subsystem_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_microblaze_0_axi_intc_0/mb_subsystem_microblaze_0_axi_intc_0_clocks.xdc] for cell 'mb_subsystem_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [C:/xilinx_work/kc705_lwip_design/project_2/project_2.runs/impl_1/.Xil/Vivado-102808-/dcp/mb_subsystem_wrapper.xdc]
+Finished Parsing XDC File [C:/xilinx_work/kc705_lwip_design/project_2/project_2.runs/impl_1/.Xil/Vivado-102808-/dcp/mb_subsystem_wrapper.xdc]
+INFO: [Memdata 28-143] Successfully populated the BRAM INIT strings from the following elf files: 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 643 instances were transformed.
+  IOBUFDS_DCIEN => IOBUFDS_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, OBUFTDS_DCIEN, OBUFTDS_DCIEN, INV): 8 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (OBUFT_DCIEN, IBUF_IBUFDISABLE): 64 instances
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 92 instances
+  OBUFDS => OBUFDS_DUAL_BUF (OBUFDS, OBUFDS, INV): 1 instances
+  RAM16X1D => RAM16X1D (RAMD32, RAMD32, GND): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 446 instances
+
+link_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 985.758 ; gain = 803.887
+Command: opt_design
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.531 . Memory (MB): peak = 991.578 ; gain = 3.906
+
+Starting Logic Optimization Task
+Logic Optimization | Checksum: a14ae87e
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.sample_timer_clr_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.sample_timer_en_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_reg_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_5' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_4' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_3' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_2' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[0]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[1]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[2]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[3]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[4]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[5]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[6]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[7]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[8]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[9]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[10]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[11]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 9d118353
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1074.602 ; gain = 83.023
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 8 inverter(s).
+INFO: [Opt 31-10] Eliminated 1226 cells.
+Phase 2 Constant Propagation | Checksum: 40943f7a
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1074.602 ; gain = 83.023
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 3230 unconnected nets.
+INFO: [Opt 31-11] Eliminated 4976 unconnected cells.
+Phase 3 Sweep | Checksum: 0b59bee6
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1074.602 ; gain = 83.023
+Ending Logic Optimization Task | Checksum: 0b59bee6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1074.602 ; gain = 83.023
+Implement Debug Cores | Checksum: a14ae87e
+
+Starting Power Optimization Task
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.sample_timer_clr_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.sample_timer_en_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_reg_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_5' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_4' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_3' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_2' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[0]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[1]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[2]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[3]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[4]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[5]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[6]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[7]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[8]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[9]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[10]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'mb_subsystem_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[11]_i_1' is not a valid startpoint. [c:/xilinx_work/kc705_lwip_design/project_2/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:817]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 16 BRAM(s) out of a total of 69 was updated to NO_CHANGE to save power.
+    Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 16 newly gated: 32 Total Ports: 138
+Ending Power Optimization Task | Checksum: 098a5976
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 1343.129 ; gain = 268.527
+INFO: [Common 17-83] Releasing license: Implementation
+30 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:42 . Memory (MB): peak = 1343.129 ; gain = 357.367
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.328 . Memory (MB): peak = 1343.129 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1343.129 ; gain = 0.000
+Command: place_design
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.109 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 1.1 Mandatory Logic Optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1343.129 ; gain = 0.000
+Phase 1.1 Mandatory Logic Optimization | Checksum: 1db330847
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 1.2 Build Super Logic Region (SLR) Database
+Phase 1.2 Build Super Logic Region (SLR) Database | Checksum: 1db330847
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 1.3 Add Constraints
+Phase 1.3 Add Constraints | Checksum: 1db330847
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 1.4 Build Macros
+Phase 1.4 Build Macros | Checksum: 187639c6c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 1.5 Routing Based Site Exclusion
+Phase 1.5 Routing Based Site Exclusion | Checksum: 187639c6c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 1.6 Implementation Feasibility check
+Phase 1.6 Implementation Feasibility check | Checksum: 187639c6c
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 1.7 Pre-Place Cells
+Phase 1.7 Pre-Place Cells | Checksum: be08d7c0
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 1.8 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.8 IO Placement/ Clock Placement/ Build Placer Device | Checksum: be08d7c0
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 1.9 Build Placer Netlist Model
+
+Phase 1.9.1 Place Init Design
+
+Phase 1.9.1.1 Build Clock Data
+Phase 1.9.1.1 Build Clock Data | Checksum: 1b153edd0
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:38 . Memory (MB): peak = 1343.129 ; gain = 0.000
+Phase 1.9.1 Place Init Design | Checksum: 1adc9d7fe
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.129 ; gain = 0.000
+Phase 1.9 Build Placer Netlist Model | Checksum: 1adc9d7fe
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 1.10 Constrain Clocks/Macros
+
+Phase 1.10.1 Constrain Global/Regional Clocks
+Phase 1.10.1 Constrain Global/Regional Clocks | Checksum: 171e0cb11
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.129 ; gain = 0.000
+Phase 1.10 Constrain Clocks/Macros | Checksum: 171e0cb11
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.129 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 171e0cb11
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 7d3a1aa2
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:02:08 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 7d3a1aa2
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:02:08 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: ef8afefb
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:02:19 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: c6a94b69
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:02:20 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 3.4 Timing Path Optimizer
+Phase 3.4 Timing Path Optimizer | Checksum: 9690ca31
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:02:23 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 3.5 Commit Small Macros & Core Logic
+Phase 3.5 Commit Small Macros & Core Logic | Checksum: 130edb93c
+
+Time (s): cpu = 00:02:50 ; elapsed = 00:02:32 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 130edb93c
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:02:33 . Memory (MB): peak = 1343.129 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 130edb93c
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:02:34 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Placement Timing Optimization
+Phase 4.1 Post Placement Timing Optimization | Checksum: e05f95e2
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:02:41 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: e05f95e2
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:02:41 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Congestion Reporting
+Phase 4.3.1 Congestion Reporting | Checksum: e05f95e2
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:02:41 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 4.3.2 updateTiming final
+Phase 4.3.2 updateTiming final | Checksum: 766f9578
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:02:47 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 4.3.3 Dump Critical Paths 
+Phase 4.3.3 Dump Critical Paths  | Checksum: 766f9578
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:02:48 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 4.3.4 Restore STA
+Phase 4.3.4 Restore STA | Checksum: 766f9578
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:02:48 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 4.3.5 Print Final WNS
+INFO: [Place 30-100] Post Placement Timing Summary | WNS=0.975  | TNS=0.000  |
+
+Phase 4.3.5 Print Final WNS | Checksum: 766f9578
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:03:04 . Memory (MB): peak = 1343.129 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 766f9578
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:03:04 . Memory (MB): peak = 1343.129 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 5becb002
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:03:04 . Memory (MB): peak = 1343.129 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 5becb002
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:03:04 . Memory (MB): peak = 1343.129 ; gain = 0.000
+Ending Placer Task | Checksum: b6e2d305
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:03:04 . Memory (MB): peak = 1343.129 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:32 ; elapsed = 00:03:08 . Memory (MB): peak = 1343.129 ; gain = 0.000
+INFO: [Timing 38-163] DEBUG : Generate clock report | CPU: 1 secs 
+
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.437 . Memory (MB): peak = 1343.129 ; gain = 0.000
+INFO: [Designutils 20-134] DEBUG : Generate Control Sets report | CPU: 0 secs 
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1343.129 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1343.129 ; gain = 0.000
+Command: route_design
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Starting Route Task
+
+Phase 1 Build RT Design
+
+Phase 1.1 Build Netlist & NodeGraph (MT)
+Phase 1.1 Build Netlist & NodeGraph (MT) | Checksum: f2cbdff2
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:00:52 . Memory (MB): peak = 1465.887 ; gain = 122.758
+Phase 1 Build RT Design | Checksum: 94ff88e0
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:52 . Memory (MB): peak = 1465.887 ; gain = 122.758
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 94ff88e0
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:53 . Memory (MB): peak = 1465.887 ; gain = 122.758
+
+Phase 2.2 Restore Routing
+Phase 2.2 Restore Routing | Checksum: 94ff88e0
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:53 . Memory (MB): peak = 1467.523 ; gain = 124.395
+
+Phase 2.3 Special Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Special Net Routing | Checksum: 1a7a180b1
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:00:55 . Memory (MB): peak = 1544.301 ; gain = 201.172
+
+Phase 2.4 Local Clock Net Routing
+Phase 2.4 Local Clock Net Routing | Checksum: c0c0dc5c
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:00:55 . Memory (MB): peak = 1544.301 ; gain = 201.172
+
+Phase 2.5 Update Timing
+
+Phase 2.5.1 Update timing with NCN CRPR
+
+Phase 2.5.1.1 Hold Budgeting
+Phase 2.5.1.1 Hold Budgeting | Checksum: c0c0dc5c
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:06 . Memory (MB): peak = 1551.563 ; gain = 208.434
+Phase 2.5.1 Update timing with NCN CRPR | Checksum: c0c0dc5c
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:06 . Memory (MB): peak = 1551.563 ; gain = 208.434
+Phase 2.5 Update Timing | Checksum: c0c0dc5c
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:06 . Memory (MB): peak = 1551.563 ; gain = 208.434
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.904  | TNS=0      | WHS=-0.473 | THS=-2.21e+03|
+
+
+Phase 2.6 Budgeting
+Phase 2.6 Budgeting | Checksum: c0c0dc5c
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:11 . Memory (MB): peak = 1551.563 ; gain = 208.434
+Phase 2 Router Initialization | Checksum: c0c0dc5c
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:11 . Memory (MB): peak = 1551.563 ; gain = 208.434
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1654b8c7d
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:22 . Memory (MB): peak = 1551.563 ; gain = 208.434
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+
+Phase 4.1.1 Remove Overlaps
+ Number of Nodes with overlaps = 2468
+ Number of Nodes with overlaps = 131
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+Phase 4.1.1 Remove Overlaps | Checksum: aa189026
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:33 . Memory (MB): peak = 1551.563 ; gain = 208.434
+
+Phase 4.1.2 Update Timing
+Phase 4.1.2 Update Timing | Checksum: aa189026
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:35 . Memory (MB): peak = 1551.563 ; gain = 208.434
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.87   | TNS=0      | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.3 collectNewHoldAndFix
+Phase 4.1.3 collectNewHoldAndFix | Checksum: 117ebd59d
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:01:36 . Memory (MB): peak = 1551.563 ; gain = 208.434
+Phase 4.1 Global Iteration 0 | Checksum: 117ebd59d
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:01:36 . Memory (MB): peak = 1551.563 ; gain = 208.434
+Phase 4 Rip-up And Reroute | Checksum: 117ebd59d
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:01:36 . Memory (MB): peak = 1551.563 ; gain = 208.434
+
+Phase 5 Delay CleanUp
+
+Phase 5.1 Update Timing
+Phase 5.1 Update Timing | Checksum: 117ebd59d
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:39 . Memory (MB): peak = 1551.563 ; gain = 208.434
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.887  | TNS=0      | WHS=N/A    | THS=N/A    |
+
+Phase 5 Delay CleanUp | Checksum: 117ebd59d
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:39 . Memory (MB): peak = 1551.563 ; gain = 208.434
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Full Hold Analysis
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 117ebd59d
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:01:45 . Memory (MB): peak = 1551.563 ; gain = 208.434
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.887  | TNS=0      | WHS=0.057  | THS=0      |
+
+Phase 6.1 Full Hold Analysis | Checksum: 117ebd59d
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:01:45 . Memory (MB): peak = 1551.563 ; gain = 208.434
+Phase 6 Post Hold Fix | Checksum: 117ebd59d
+
+Time (s): cpu = 00:03:12 ; elapsed = 00:01:45 . Memory (MB): peak = 1551.563 ; gain = 208.434
+
+Router Utilization Summary
+  Global Vertical Wire Utilization    = 2.93546 %
+  Global Horizontal Wire Utilization  = 3.12429 %
+  Total Num Pips                      = 486929
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 7 Verifying routed nets
+
+ Verification completed successfully
+Phase 7 Verifying routed nets | Checksum: 117ebd59d
+
+Time (s): cpu = 00:03:12 ; elapsed = 00:01:46 . Memory (MB): peak = 1551.563 ; gain = 208.434
+
+Phase 8 Depositing Routes
+Phase 8 Depositing Routes | Checksum: c0d9f494
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:01:49 . Memory (MB): peak = 1551.563 ; gain = 208.434
+
+Phase 9 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.887  | TNS=0.000  | WHS=0.057  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 9 Post Router Timing | Checksum: c0d9f494
+
+Time (s): cpu = 00:03:31 ; elapsed = 00:02:00 . Memory (MB): peak = 1551.563 ; gain = 208.434
+INFO: [Route 35-16] Router Completed Successfully
+Ending Route Task | Checksum: c0d9f494
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:02:00 . Memory (MB): peak = 1551.563 ; gain = 208.434
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:02:00 . Memory (MB): peak = 1551.563 ; gain = 208.434
+INFO: [Common 17-83] Releasing license: Implementation
+57 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:36 ; elapsed = 00:02:04 . Memory (MB): peak = 1551.563 ; gain = 208.434
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/xilinx_work/kc705_lwip_design/project_2/project_2.runs/impl_1/mb_subsystem_wrapper_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1551.563 ; gain = 0.000
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+report_power: Time (s): cpu = 00:01:00 ; elapsed = 00:00:48 . Memory (MB): peak = 1551.563 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max, Constraints type: SDC.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1551.563 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1551.563 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1551.563 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 03:32:02 2013...

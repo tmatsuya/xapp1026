@@ -1,0 +1,16 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Thu Sep 18 11:27:04 2014
+| Host         : XHDKATTAD30 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_subsystem_ilmb_v10_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_subsystem_ilmb_v10_1 (xilinx.com:ip:lmb_v10:3.0) from (Rev. 2) to (Rev. 4)
+

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.3 (64-bit)
+# SW Build 1018564 on Mon Sep 15 19:04:16 MDT 2014
+# IP Build 1018438 on Mon Sep 15 16:10:11 MDT 2014
+# Start of session at: Wed Oct 29 16:54:39 2014
+# Process ID: 59404
+# Log file: C:/Design_checkkc705/project_1/project_1.runs/synth_1/mb_ethernet_wrapper.vds
+# Journal file: C:/Design_checkkc705/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mb_ethernet_wrapper.tcl

@@ -1,0 +1,2093 @@
+!SESSION 2012-12-11 13:08:44.488 -----------------------------------------------
+eclipse.buildId=Release 14.4 Build SDK_P.49d
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /proj/ips/users/yashova/IP_Integrator/IPI_DDR_XAPP/ipi_sys_ddr.sdk/sysrtos
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-11 13:11:02.459
+!MESSAGE Indexed 'app_bsp' (0 sources, 8 headers) in 0.34 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-11 13:11:03.269
+!MESSAGE Indexed 'app' (1 sources, 21 headers) in 0.75 sec: 184 declarations; 380 references; 8 unresolved inclusions; 0 syntax errors; 40 unresolved names (6.62%)
+
+!ENTRY org.eclipse.debug.ui 4 0 2012-12-11 14:28:26.556
+!MESSAGE Launch shortcut 'com.xilinx.sdk.debug.ui.launchShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property com.xilinx.sdk.tools.namespace.propertytester.XCProject to type class org.eclipse.core.internal.resources.File
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:744)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:780)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:506)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:320)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:241)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$2.run(LaunchingResourceManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2012-12-11 14:28:26.557
+!MESSAGE No property tester contributes a property com.xilinx.sdk.tools.namespace.propertytester.XCProject to type class org.eclipse.core.internal.resources.File
+
+!ENTRY org.eclipse.core.jobs 4 2 2012-12-11 14:31:53.278
+!MESSAGE An internal error occurred during: "Launching app Debug".
+!STACK 0
+java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:924)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1128)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2012-12-11 14:32:36.836
+!MESSAGE An internal error occurred during: "Launching app Debug".
+!STACK 0
+java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:924)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1128)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.debug.core 4 125 2012-12-11 14:32:59.159
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Target request failed: Failed to interrupt.
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at org.eclipse.debug.internal.core.LaunchManager.shutdown(LaunchManager.java:2342)
+	at org.eclipse.debug.core.DebugPlugin.stop(DebugPlugin.java:605)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:843)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:836)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:501)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:550)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1097)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:597)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:266)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:690)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:588)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:415)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+!SUBENTRY 1 org.eclipse.cdt.debug.core 4 5010 2012-12-11 14:32:59.159
+!MESSAGE Target request failed: Failed to interrupt.
+!SESSION 2012-12-11 14:33:14.082 -----------------------------------------------
+eclipse.buildId=Release 14.4 Build SDK_P.49d
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2012-12-11 14:33:30.104
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2012-12-11 14:33:32.221
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 unknown 0 0 2012-12-11 14:33:32.221
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2012-12-11 14:33:32.221
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2012-12-11 14:33:32.221
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2012-12-11 14:33:32.221
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2012-12-11 14:33:32.221
+!MESSAGE Unable to restore perspective: Workspace - C/C++.
+!SUBENTRY 2 org.eclipse.ui 0 0 2012-12-11 14:33:32.221
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2012-12-11 14:33:32.221
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2012-12-11 14:33:32.221
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2012-12-11 14:33:32.221
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2012-12-11 14:33:32.221
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2012-12-11 14:33:32.221
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2012-12-11 14:33:32.221
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2012-12-11 14:33:32.221
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2012-12-11 14:33:32.221
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 0 2012-12-11 14:33:32.221
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 unknown 0 0 2012-12-11 14:33:32.221
+!MESSAGE OK
+
+!ENTRY org.eclipse.core.jobs 4 2 2012-12-11 14:36:29.304
+!MESSAGE An internal error occurred during: "Launching app Debug".
+!STACK 0
+java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:924)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1128)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.debug.ui 4 0 2012-12-11 14:52:52.770
+!MESSAGE Launch shortcut 'com.xilinx.sdk.debug.ui.launchShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property com.xilinx.sdk.tools.namespace.propertytester.XCProject to type class org.eclipse.core.internal.resources.File
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:744)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:780)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:506)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:320)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:241)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$2.run(LaunchingResourceManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2012-12-11 14:52:52.771
+!MESSAGE No property tester contributes a property com.xilinx.sdk.tools.namespace.propertytester.XCProject to type class org.eclipse.core.internal.resources.File
+
+!ENTRY org.eclipse.ui 4 0 2012-12-11 15:08:35.718
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3515)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3164)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+Caused by: java.lang.NullPointerException
+	at com.xilinx.sdk.hw.sync.internal.HwChangeWorkspaceSynchronizer.reopenMssFiles(Unknown Source)
+	at com.xilinx.sdk.hw.sync.internal.HwChangeWorkspaceSynchronizer.synchronize(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwSpecChangeUtil.performChange(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.doMonitorTask(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.access$0(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor$1.run(Unknown Source)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:158)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2012-12-11 15:09:36.191
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3515)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3164)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+Caused by: java.lang.NullPointerException
+	at com.xilinx.sdk.hw.sync.internal.HwChangeWorkspaceSynchronizer.reopenMssFiles(Unknown Source)
+	at com.xilinx.sdk.hw.sync.internal.HwChangeWorkspaceSynchronizer.synchronize(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwSpecChangeUtil.performChange(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.doMonitorTask(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.access$0(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor$1.run(Unknown Source)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:158)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 23 more
+!SESSION 2012-12-12 10:29:33.418 -----------------------------------------------
+eclipse.buildId=Release 14.4 Build SDK_P.49d
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2012-12-12 10:29:50.052
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2012-12-12 10:29:52.419
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 unknown 0 0 2012-12-12 10:29:52.419
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2012-12-12 10:29:52.419
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2012-12-12 10:29:52.419
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2012-12-12 10:29:52.419
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2012-12-12 10:29:52.419
+!MESSAGE Unable to restore perspective: Workspace - C/C++.
+!SUBENTRY 2 org.eclipse.ui 0 0 2012-12-12 10:29:52.419
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2012-12-12 10:29:52.419
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2012-12-12 10:29:52.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2012-12-12 10:29:52.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2012-12-12 10:29:52.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2012-12-12 10:29:52.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2012-12-12 10:29:52.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2012-12-12 10:29:52.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2012-12-12 10:29:52.419
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 0 2012-12-12 10:29:52.419
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 unknown 0 0 2012-12-12 10:29:52.419
+!MESSAGE OK
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-12 10:43:09.083
+!MESSAGE Indexed 'app' (1 sources, 40 headers) in 1.20 sec: 691 declarations; 947 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.06%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-12 10:45:23.763
+!MESSAGE Indexed 'app' (1 sources, 40 headers) in 0.42 sec: 693 declarations; 946 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.06%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-12 10:47:23.676
+!MESSAGE Indexed 'app_bsp' (0 sources, 8 headers) in 0.02 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-12 10:47:23.827
+!MESSAGE Indexed 'app' (1 sources, 21 headers) in 0.14 sec: 186 declarations; 388 references; 8 unresolved inclusions; 0 syntax errors; 37 unresolved names (6.06%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-12 10:48:48.786
+!MESSAGE Indexed 'freertos_bsp_0' (0 sources, 8 headers) in 0.02 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-12 10:53:52.856
+!MESSAGE Indexed 'freertos_bsp_0' (0 sources, 8 headers) in 0.01 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-12 10:54:42.091
+!MESSAGE Indexed 'app' (1 sources, 40 headers) in 0.41 sec: 693 declarations; 946 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.06%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-12 10:56:52.148
+!MESSAGE Indexed 'app_bsp' (0 sources, 8 headers) in 0.01 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-12 10:56:52.249
+!MESSAGE Indexed 'app' (1 sources, 21 headers) in 0.10 sec: 186 declarations; 388 references; 8 unresolved inclusions; 0 syntax errors; 37 unresolved names (6.06%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-12 11:03:17.778
+!MESSAGE Indexed 'app_bsp' (0 sources, 8 headers) in 0.01 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-12 11:03:17.888
+!MESSAGE Indexed 'app' (1 sources, 21 headers) in 0.10 sec: 186 declarations; 388 references; 8 unresolved inclusions; 0 syntax errors; 37 unresolved names (6.06%)
+!SESSION 2013-01-07 15:21:17.008 -----------------------------------------------
+eclipse.buildId=Release 14.4 Build SDK_P.49d
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /proj/ips/users/yashova/IP_Integrator/IPI_DDR_XAPP/ipi_sys_ddr.sdk/sysrtos
+
+!ENTRY org.eclipse.ui 4 0 2013-01-07 15:21:33.947
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3515)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3164)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+Caused by: java.lang.NullPointerException
+	at com.xilinx.sdk.hw.sync.internal.HwChangeWorkspaceSynchronizer.reopenMssFiles(Unknown Source)
+	at com.xilinx.sdk.hw.sync.internal.HwChangeWorkspaceSynchronizer.synchronize(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwSpecChangeUtil.performChange(Unknown Source)
+	at com.xilinx.sdk.startup.InitSDK$8.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 23 more
+
+!ENTRY org.eclipse.debug.ui 4 0 2013-01-07 15:21:41.854
+!MESSAGE Launch shortcut 'com.xilinx.sdk.debug.ui.launchShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property com.xilinx.sdk.tools.namespace.propertytester.XCProject to type class org.eclipse.core.internal.resources.File
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:744)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:780)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:506)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:320)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:241)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$2.run(LaunchingResourceManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2013-01-07 15:21:41.854
+!MESSAGE No property tester contributes a property com.xilinx.sdk.tools.namespace.propertytester.XCProject to type class org.eclipse.core.internal.resources.File
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.219
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/task.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/task.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.219
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/task.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.224
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/timers.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/timers.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.224
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/timers.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.262
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/bram_v3_01_a/src/xbram.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/bram_v3_01_a/src/xbram.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.262
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/bram_v3_01_a/src/xbram.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.265
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/bram_v3_01_a/src/xbram_hw.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/bram_v3_01_a/src/xbram_hw.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.265
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/bram_v3_01_a/src/xbram_hw.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.268
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xbasic_types.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xbasic_types.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.268
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xbasic_types.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.271
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xparameters.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xparameters.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.271
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xparameters.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.275
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xstatus.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xstatus.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.275
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xstatus.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.279
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xutil.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xutil.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.280
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xutil.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.284
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xversion.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xversion.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.284
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/common_v1_00_a/src/xversion.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.287
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/cpu_v1_14_a/src/xio.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/cpu_v1_14_a/src/xio.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.288
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/cpu_v1_14_a/src/xio.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.291
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/FreeRTOS.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/FreeRTOS.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.291
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/FreeRTOS.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.293
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/FreeRTOSConfig.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/FreeRTOSConfig.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.294
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/FreeRTOSConfig.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.296
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/StackMacros.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/StackMacros.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.297
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/StackMacros.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.300
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/list.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/list.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.300
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/list.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.303
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/microblaze_exceptions_g.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/microblaze_exceptions_g.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.303
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/microblaze_exceptions_g.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.306
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/mpu_wrappers.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/mpu_wrappers.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.306
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/mpu_wrappers.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.309
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/portable.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/portable.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.309
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/portable.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.312
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/portmacro.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/portmacro.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.312
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/portmacro.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.315
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/projdefs.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/projdefs.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.315
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/projdefs.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.318
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/queue.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/queue.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.318
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/queue.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.321
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/task.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/task.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.321
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/task.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.323
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/timers.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/timers.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.324
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/freertos_v2_00_a/src/timers.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.327
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/intc_v2_05_a/src/xintc.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/intc_v2_05_a/src/xintc.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.328
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/intc_v2_05_a/src/xintc.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.330
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/intc_v2_05_a/src/xintc_i.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/intc_v2_05_a/src/xintc_i.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.330
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/intc_v2_05_a/src/xintc_i.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.333
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/intc_v2_05_a/src/xintc_l.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/intc_v2_05_a/src/xintc_l.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.333
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/intc_v2_05_a/src/xintc_l.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.336
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/bspconfig.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/bspconfig.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.336
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/bspconfig.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.339
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_assert.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_assert.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.339
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_assert.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.342
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_testcache.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_testcache.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.342
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_testcache.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.344
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_testio.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_testio.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.344
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_testio.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.347
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_testmem.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_testmem.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.347
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_testmem.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.350
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_types.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_types.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.351
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/common/xil_types.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.354
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/armcc/xpseudo_asm_rvct.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/armcc/xpseudo_asm_rvct.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.354
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/armcc/xpseudo_asm_rvct.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.357
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/sleep.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/sleep.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.357
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/sleep.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.360
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/smc.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/smc.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.360
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/smc.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.363
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xil_cache.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xil_cache.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.363
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xil_cache.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.365
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xil_cache_l.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xil_cache_l.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.365
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xil_cache_l.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.368
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xil_exception.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xil_exception.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.368
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xil_exception.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.372
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xil_io.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xil_io.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.372
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xil_io.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.375
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xl2cc_counter.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xl2cc_counter.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.375
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xl2cc_counter.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.378
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xparameters_ps.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xparameters_ps.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.378
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xparameters_ps.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.382
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xpm_counter.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xpm_counter.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.382
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xpm_counter.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.390
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xpseudo_asm.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xpseudo_asm.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.390
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xpseudo_asm.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.394
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xreg_cortexa9.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xreg_cortexa9.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.395
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xreg_cortexa9.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.398
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xtime_l.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xtime_l.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.399
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/cortexa9/xtime_l.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.403
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/mb_interface.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/mb_interface.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.403
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/mb_interface.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.406
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/microblaze_exceptions_g.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/microblaze_exceptions_g.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.407
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/microblaze_exceptions_g.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.410
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/microblaze_exceptions_i.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/microblaze_exceptions_i.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.411
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/microblaze_exceptions_i.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.414
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/microblaze_interrupts_i.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/microblaze_interrupts_i.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.415
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/microblaze_interrupts_i.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.419
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/sleep.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/sleep.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.419
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/sleep.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.423
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xcache_l.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xcache_l.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.423
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xcache_l.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.427
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xexception_l.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xexception_l.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.427
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xexception_l.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.431
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xil_cache.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xil_cache.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.431
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xil_cache.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.435
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xil_exception.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xil_exception.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.435
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xil_exception.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.440
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xil_io.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xil_io.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.440
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xil_io.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.444
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xtime_l.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xtime_l.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.444
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc405/xtime_l.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.448
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/sleep.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/sleep.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.449
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/sleep.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.453
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xcache_l.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xcache_l.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.453
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xcache_l.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.457
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xexception_l.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xexception_l.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.457
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xexception_l.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.461
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xil_cache.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xil_cache.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.461
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xil_cache.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.465
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xil_exception.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xil_exception.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.465
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xil_exception.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.469
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xil_io.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xil_io.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.469
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xil_io.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.473
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xtime_l.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xtime_l.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.473
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xtime_l.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.477
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xtlb_l.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xtlb_l.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.477
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/ppc440/xtlb_l.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.481
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/profile/_profile_timer_hw.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/profile/_profile_timer_hw.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.481
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/profile/_profile_timer_hw.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.485
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/profile/mblaze_nt_types.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/profile/mblaze_nt_types.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.485
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/profile/mblaze_nt_types.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.489
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/profile/profile.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/profile/profile.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.489
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/profile/profile.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.493
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/profile/profile_config.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/profile/profile_config.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.493
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/profile/profile_config.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.497
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/pvr.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/pvr.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.497
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/pvr.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.501
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_assert.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_assert.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.501
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_assert.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.505
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_cache.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_cache.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.505
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_cache.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.509
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_exception.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_exception.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.509
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_exception.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.512
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_io.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_io.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.513
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_io.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.516
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_testcache.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_testcache.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.517
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_testcache.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.521
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_testio.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_testio.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.521
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_testio.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.524
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_testmem.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_testmem.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.524
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_testmem.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.528
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_types.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_types.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.528
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/standalone_v3_03_a/src/xil_types.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.532
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/tmrctr_v2_04_a/src/xtmrctr.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/tmrctr_v2_04_a/src/xtmrctr.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.532
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/tmrctr_v2_04_a/src/xtmrctr.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.536
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/tmrctr_v2_04_a/src/xtmrctr_i.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/tmrctr_v2_04_a/src/xtmrctr_i.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.536
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/tmrctr_v2_04_a/src/xtmrctr_i.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.539
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/tmrctr_v2_04_a/src/xtmrctr_l.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/tmrctr_v2_04_a/src/xtmrctr_l.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.540
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/tmrctr_v2_04_a/src/xtmrctr_l.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.543
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/uartlite_v2_00_a/src/xuartlite.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/uartlite_v2_00_a/src/xuartlite.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.544
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/uartlite_v2_00_a/src/xuartlite.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.547
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/uartlite_v2_00_a/src/xuartlite_i.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/uartlite_v2_00_a/src/xuartlite_i.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.547
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/uartlite_v2_00_a/src/xuartlite_i.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-01-07 15:22:04.551
+!MESSAGE Error: Resource '/app_bsp/microblaze_1/libsrc/uartlite_v2_00_a/src/xuartlite_l.h' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/app_bsp/microblaze_1/libsrc/uartlite_v2_00_a/src/xuartlite_l.h' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:326)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:200)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:291)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.core.parser.FileContent.create(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getCodeReader(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-01-07 15:22:04.551
+!MESSAGE Resource '/app_bsp/microblaze_1/libsrc/uartlite_v2_00_a/src/xuartlite_l.h' does not exist.
+
+!ENTRY org.eclipse.ui 4 0 2013-01-07 15:26:39.722
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.IllegalArgumentException: Invalid Hardware Specification File provided: /proj/ips/users/yashova/IP_Integrator/IPI_DDR_XAPP/ipi_sys_ddr.sdk/SDK/SDK_Export/hw/sys_mb_ddr3.xml)
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3515)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3164)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+Caused by: java.lang.IllegalArgumentException: Invalid Hardware Specification File provided: /proj/ips/users/yashova/IP_Integrator/IPI_DDR_XAPP/ipi_sys_ddr.sdk/SDK/SDK_Export/hw/sys_mb_ddr3.xml
+	at com.xilinx.sdk.hw.internal.HwPlatform.<init>(Unknown Source)
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.createHwSpec(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.checkNewSpecValid(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.doMonitorTask(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.access$0(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor$1.run(Unknown Source)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:158)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 23 more

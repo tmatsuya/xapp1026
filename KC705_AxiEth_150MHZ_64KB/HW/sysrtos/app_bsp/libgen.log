@@ -1,0 +1,41 @@
+Release 14.4 - libgen Xilinx EDK 14.4 Build EDK_P.49d
+ (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp ../lib -pe microblaze_1
+-log libgen.log system.mss 
+
+INFO:EDK:2500 - The following PARAMETERs of os freertos are ignored as their
+   category selection PARAMETER hook_functions is set to "false" in MSS 
+WARNING:EDK:473 -
+   /proj/ips/users/yashova/IP_Integrator/IPI_DDR_XAPP/ipi_sys_ddr.sdk/sysrtos/ap
+   p_bsp/system.mss line 13 - Ignoring PARAMETER HOOK_FUNCTIONS  ...
+WARNING:EDK:473 -
+   /proj/ips/users/yashova/IP_Integrator/IPI_DDR_XAPP/ipi_sys_ddr.sdk/sysrtos/ap
+   p_bsp/system.mss line 11 - Ignoring PARAMETER USE_MALLOC_FAILED_HOOK  ...
+INFO:EDK:2500 - The following PARAMETERs of os freertos are ignored as their
+   category selection PARAMETER software_timers is set to "false" in MSS 
+WARNING:EDK:473 -
+   /proj/ips/users/yashova/IP_Integrator/IPI_DDR_XAPP/ipi_sys_ddr.sdk/sysrtos/ap
+   p_bsp/system.mss line 12 - Ignoring PARAMETER SOFTWARE_TIMERS  ...
+
+Staging source files.
+Running DRCs.
+Running generate.
+WARNING:EDK - : Clock frequency information is not available in the design,  for
+   peripheral AXI_TIMER_1. Assuming a default frequency of 100MHz.  If this is
+   incorrect, the peripheral AXI_TIMER_1 will be non-functional
+
+WARNING:EDK - : Bus Clock frequency information is not available in the design,
+   for axi_interconnect_2_xbar. Assuming a default frequency of 100MHz
+
+
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mhard-float
+-mno-xl-soft-div -mcpu=v8.40.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mhard-float
+-mno-xl-soft-div -mcpu=v8.40.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Running execs_generate.

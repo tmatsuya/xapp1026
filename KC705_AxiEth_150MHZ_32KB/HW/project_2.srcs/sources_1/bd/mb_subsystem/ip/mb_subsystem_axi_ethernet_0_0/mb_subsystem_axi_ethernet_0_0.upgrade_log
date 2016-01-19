@@ -1,0 +1,141 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3 (win64) Build 1018564 Mon Sep 15 19:04:16 MDT 2014
+| Date         : Mon Sep 22 15:25:28 2014
+| Host         : XHDKATTAD30 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_subsystem_axi_ethernet_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of mb_subsystem_axi_ethernet_0_0 from xilinx.com:ip:axi_ethernet:6.1 (Rev. 1) to xilinx.com:ip:axi_ethernet:6.2
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'mb_subsystem_axi_ethernet_0_0'.
+
+
+-upgrade has renamed interface 'mdio' (xilinx.com:interface:mdio:1.0) as mdio_io
+-upgrade has added interface 'CLK.axis_clk'
+-upgrade has added interface 'CLK.gtx_clk'
+-upgrade has added interface 'CLK.ref_clk'
+-upgrade has added interface 'CLK.s_axi_lite_clk'
+-upgrade has added interface 'INT.interrupt'
+-upgrade has added interface 'INT.mac_irq'
+-upgrade has added interface 'RST.axi_rxd_arstn'
+-upgrade has added interface 'RST.axi_rxs_arstn'
+-upgrade has added interface 'RST.axi_txc_arstn'
+-upgrade has added interface 'RST.axi_txd_arstn'
+-upgrade has added interface 'RST.phy_rst_n'
+-upgrade has added interface 'RST.s_axi_lite_resetn'
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'mb_subsystem_axi_ethernet_0_0'. These changes may impact your design.
+
+
+-upgrade has added port 'mdio_io_io'
+-upgrade has added port 'mdio_io_mdc'
+
+4. Upgrade messages
+-------------------
+
+Removed parameter Standalone
+Added parameter Enable_Pfc with value false
+Added parameter TransceiverControl with value false
+Added parameter processor_mode with value true
+Renamed interface mdio to mdio_io
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Thu Sep 18 11:29:48 2014
+| Host         : XHDKATTAD30 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_subsystem_axi_ethernet_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of mb_subsystem_axi_ethernet_0_0 from xilinx.com:ip:axi_ethernet:6.0 to xilinx.com:ip:axi_ethernet:6.1 (Rev. 1)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Upgrade messages
+-------------------
+
+Added parameter Standalone with value false
+Added parameter Timer_Format with value 0
+Added parameter Include_IO with value true
+Renamed parameter Frame_Filter setting false to true
+Renamed parameter Statistics_Counters setting false to true
+
+3. Customization warnings
+-------------------------
+
+WARNING: Attempt to set value 'sgmii_mgt_clk' on disabled parameter 'DIFFCLK_BOARD_INTERFACE' is ignored for '/axi_ethernet_0'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  Please consult the warnings from the previous sections, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_ethernet:6.1 -user_name mb_subsystem_axi_ethernet_0_0
+set_property -dict "\
+  CONFIG.RXVLAN_TAG false \
+  CONFIG.RXVLAN_TRAN false \
+  CONFIG.ENABLE_LVDS false \
+  CONFIG.Enable_1588 false \
+  CONFIG.Number_of_Table_Entries 4 \
+  CONFIG.TXVLAN_STRP false \
+  CONFIG.MCAST_EXTEND false \
+  CONFIG.Enable_1588_1step false \
+  CONFIG.Frame_Filter true \
+  CONFIG.PHY_TYPE GMII \
+  CONFIG.PHYADDR 1 \
+  CONFIG.TXVLAN_TAG false \
+  CONFIG.Include_IO true \
+  CONFIG.MDIO_BOARD_INTERFACE mdio_io \
+  CONFIG.Timer_Format 0 \
+  CONFIG.PHYRST_BOARD_INTERFACE phy_reset_out \
+  CONFIG.USE_BOARD_FLOW true \
+  CONFIG.TIMER_CLK_PERIOD 4000 \
+  CONFIG.Statistics_Counters true \
+  CONFIG.ETHERNET_BOARD_INTERFACE gmii \
+  CONFIG.TXVLAN_TRAN false \
+  CONFIG.RXCSUM Full \
+  CONFIG.RXVLAN_STRP false \
+  CONFIG.Statistics_Reset false \
+  CONFIG.Standalone false \
+  CONFIG.SIMULATION_MODE false \
+  CONFIG.Statistics_Width 64bit \
+  CONFIG.Component_Name mb_subsystem_axi_ethernet_0_0 \
+  CONFIG.DIFFCLK_BOARD_INTERFACE sgmii_mgt_clk \
+  CONFIG.TXCSUM Full \
+  CONFIG.SupportLevel 1 \
+  CONFIG.ENABLE_AVB false \
+  CONFIG.RXMEM 32k \
+  CONFIG.TXMEM 32k " [get_ips mb_subsystem_axi_ethernet_0_0]
+
+

@@ -1,0 +1,6 @@
+12:13:15 **** Incremental Build of configuration Debug for project socket_apps ****
+make all 
+make: Nothing to be done for `all'.
+
+12:13:16 Build Finished (took 698ms)
+

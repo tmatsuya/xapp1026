@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="0">
+	<BUILD_NUMBER Name="1018564"/>
+	<FULL_BUILD Name="SW Build 1018564 on Mon Sep 15 19:04:16 MDT 2014"/>
+	<MODE Name="Post-Bitstream"/>
+	<SYSTEMINFO BOARD="xilinx.com:kc705:part0:1.1" ARCH="kintex7" PACKAGE="ffg900" DEVICE="7k325t" SPEED="-2" LUT="" FF="" BRAM="" DSP=""/>
+	<HIERARCHY Name="mb_ethernet_i"/>
+	<File Type="HW_HANDOFF" Name="mb_ethernet.hwh" ModTime="1414581902"/>
+	<File Type="BIT" Name="mb_ethernet_wrapper.bit" ModTime="1414584347"/>
+	<File Type="BMM" Name="mb_ethernet_wrapper.mmi" ModTime="1414584177"/>
+	<File Type="BD_TCL" Name="mb_ethernet_bd.tcl" ModTime="1414581902"/>
+	<USEDRESOURCES LUT="" FF="" BRAM="" DSP=""/>
+</Project>
+

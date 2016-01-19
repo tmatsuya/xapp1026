@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.3 (64-bit)
+# SW Build 1018564 on Mon Sep 15 18:49:35 MDT 2014
+# 
+# Start of session at: Tue Nov 11 18:25:18 2014
+# Process ID: 135112
+# Log file: C:/PROJECT_FOR_RELEASE/KC705_AXIEthernetlite_150Mhz_64Kb_cache/SW/webtalk/webtalk.log
+# Journal file: C:/PROJECT_FOR_RELEASE/KC705_AXIEthernetlite_150Mhz_64Kb_cache/SW/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

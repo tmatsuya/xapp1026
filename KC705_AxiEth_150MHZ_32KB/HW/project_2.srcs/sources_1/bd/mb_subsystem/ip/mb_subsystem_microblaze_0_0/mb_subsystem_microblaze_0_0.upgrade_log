@@ -1,0 +1,59 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3 (win64) Build 1018564 Mon Sep 15 19:04:16 MDT 2014
+| Date         : Mon Sep 22 15:26:36 2014
+| Host         : XHDKATTAD30 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_subsystem_microblaze_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_subsystem_microblaze_0_0 from xilinx.com:ip:microblaze:9.3 (Rev. 1) to xilinx.com:ip:microblaze:9.4
+
+2. Upgrade messages
+-------------------
+
+Added parameter C_DEBUG_EXTERNAL_TRACE with value 0
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Thu Sep 18 11:27:02 2014
+| Host         : XHDKATTAD30 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_subsystem_microblaze_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_subsystem_microblaze_0_0 from xilinx.com:ip:microblaze:9.2 to xilinx.com:ip:microblaze:9.3 (Rev. 1)
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'mb_subsystem_microblaze_0_0'.
+
+
+-upgrade has added interface 'DBG_INTR'
+
+3. Upgrade messages
+-------------------
+
+Added parameter C_DEBUG_EVENT_COUNTERS with value 5
+Added parameter C_DEBUG_LATENCY_COUNTERS with value 1
+Added parameter C_DEBUG_COUNTER_WIDTH with value 32
+Added parameter C_DEBUG_TRACE_SIZE with value 8192
+Added parameter C_DEBUG_PROFILE_SIZE with value 0
+

@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# updatemem v2014.3 (64-bit)
+# SW Build 1018564 on Mon Sep 15 18:49:35 MDT 2014
+# 
+# Start of session at: Mon Sep 22 18:47:49 2014
+# Process ID: 56488
+# Log file: c:/PROJECT_FOR_RELEASE/KC705_150MHZ_32KB/project_150MHz/updatemem.log
+# Journal file: c:/PROJECT_FOR_RELEASE/KC705_150MHZ_32KB/project_150MHz\updatemem.jou
+#-----------------------------------------------------------
+WARNING: [Common 17-204] Your XILINX environment variable is undefined. You will not be able to run Synthesis and Implementation using ISE based strategies, or import ngc netlists. Please set up your XILINX environment to get full functionality.
+source C:/Xilinx/SDK/2014.3/scripts/updatemem/main.tcl -notrace
+CRITICAL WARNING: [Updatemem 57-155] Out of bounds code segment for ram space. 
+ 
+Loading bitfile C:/PROJECT_FOR_RELEASE/KC705_150MHZ_32KB/project_150MHz/project_2.sdk/mb_subsystem_wrapper_hw_platform_0/mb_subsystem_wrapper.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream C:/PROJECT_FOR_RELEASE/KC705_150MHZ_32KB/project_150MHz/project_2.sdk/mb_subsystem_wrapper_hw_platform_0/download.bit...
+update_mem: Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 507.488 ; gain = 450.688
+INFO: [Common 17-206] Exiting updatemem at Mon Sep 22 18:48:45 2014...

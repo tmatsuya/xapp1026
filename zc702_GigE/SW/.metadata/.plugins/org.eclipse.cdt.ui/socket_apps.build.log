@@ -1,0 +1,101 @@
+19:37:33 **** Incremental Build of configuration Debug for project socket_apps ****
+make all 
+'Building file: ../src/dispatch.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dispatch.d" -MT"src/dispatch.d" -o "src/dispatch.o" "../src/dispatch.c"
+'Finished building: ../src/dispatch.c'
+' '
+'Building file: ../src/echo.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+'Finished building: ../src/echo.c'
+' '
+'Building file: ../src/http_response.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/http_response.d" -MT"src/http_response.d" -o "src/http_response.o" "../src/http_response.c"
+'Finished building: ../src/http_response.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/platform_fs.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_fs.d" -MT"src/platform_fs.d" -o "src/platform_fs.o" "../src/platform_fs.c"
+'Finished building: ../src/platform_fs.c'
+' '
+'Building file: ../src/platform_gpio.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_gpio.d" -MT"src/platform_gpio.d" -o "src/platform_gpio.o" "../src/platform_gpio.c"
+'Finished building: ../src/platform_gpio.c'
+' '
+'Building file: ../src/prot_malloc.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/prot_malloc.d" -MT"src/prot_malloc.d" -o "src/prot_malloc.o" "../src/prot_malloc.c"
+'Finished building: ../src/prot_malloc.c'
+' '
+'Building file: ../src/rxperf.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rxperf.d" -MT"src/rxperf.d" -o "src/rxperf.o" "../src/rxperf.c"
+'Finished building: ../src/rxperf.c'
+' '
+'Building file: ../src/tftpserver.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tftpserver.d" -MT"src/tftpserver.d" -o "src/tftpserver.o" "../src/tftpserver.c"
+'Finished building: ../src/tftpserver.c'
+' '
+'Building file: ../src/tftputils.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tftputils.d" -MT"src/tftputils.d" -o "src/tftputils.o" "../src/tftputils.c"
+'Finished building: ../src/tftputils.c'
+' '
+'Building file: ../src/txperf.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/txperf.d" -MT"src/txperf.d" -o "src/txperf.o" "../src/txperf.c"
+'Finished building: ../src/txperf.c'
+' '
+'Building file: ../src/udpsend.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/udpsend.d" -MT"src/udpsend.d" -o "src/udpsend.o" "../src/udpsend.c"
+'Finished building: ../src/udpsend.c'
+' '
+'Building file: ../src/urxperf.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/urxperf.d" -MT"src/urxperf.d" -o "src/urxperf.o" "../src/urxperf.c"
+'Finished building: ../src/urxperf.c'
+' '
+'Building file: ../src/utxperf.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/utxperf.d" -MT"src/utxperf.d" -o "src/utxperf.o" "../src/utxperf.c"
+'Finished building: ../src/utxperf.c'
+' '
+'Building file: ../src/web_utils.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/web_utils.d" -MT"src/web_utils.d" -o "src/web_utils.o" "../src/web_utils.c"
+'Finished building: ../src/web_utils.c'
+' '
+'Building file: ../src/webserver.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../socket_apps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/webserver.d" -MT"src/webserver.d" -o "src/webserver.o" "../src/webserver.c"
+'Finished building: ../src/webserver.c'
+' '
+'Building target: socket_apps.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../socket_apps_bsp/ps7_cortexa9_0/lib -o "socket_apps.elf"  ./src/dispatch.o ./src/echo.o ./src/http_response.o ./src/main.o ./src/platform.o ./src/platform_fs.o ./src/platform_gpio.o ./src/prot_malloc.o ./src/rxperf.o ./src/tftpserver.o ./src/tftputils.o ./src/txperf.o ./src/udpsend.o ./src/urxperf.o ./src/utxperf.o ./src/web_utils.o ./src/webserver.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: socket_apps.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size socket_apps.elf  |tee "socket_apps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 193516	   3184	10931180	11127880	 a9cc48	socket_apps.elf
+'Finished building: socket_apps.elf.size'
+' '
+
+19:37:44 Build Finished (took 11s.406ms)
+

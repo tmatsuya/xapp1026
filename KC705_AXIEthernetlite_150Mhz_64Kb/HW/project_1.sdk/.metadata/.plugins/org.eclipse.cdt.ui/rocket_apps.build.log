@@ -1,0 +1,21 @@
+10:14:44 **** Auto Build of configuration Debug for project rocket_apps ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../rocket_apps_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: rocket_apps.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../rocket_apps_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "rocket_apps.elf"  ./src/dispatch.o ./src/echo.o ./src/http_response.o ./src/main.o ./src/platform.o ./src/platform_fs.o ./src/platform_gpio.o ./src/prot_malloc.o ./src/rxperf.o ./src/tftpserver.o ./src/tftputils.o ./src/txperf.o ./src/urxperf.o ./src/utxperf.o ./src/web_utils.o ./src/webserver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: rocket_apps.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size rocket_apps.elf  |tee "rocket_apps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 157028	   1616	3089572	3248216	 319058	rocket_apps.elf
+'Finished building: rocket_apps.elf.size'
+' '
+
+10:14:47 Build Finished (took 3s.197ms)
+

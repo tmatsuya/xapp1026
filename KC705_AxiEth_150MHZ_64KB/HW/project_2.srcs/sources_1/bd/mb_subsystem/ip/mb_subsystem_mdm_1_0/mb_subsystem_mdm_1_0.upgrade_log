@@ -1,0 +1,123 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3 (win64) Build 1018564 Mon Sep 15 19:04:16 MDT 2014
+| Date         : Mon Sep 22 15:26:32 2014
+| Host         : XHDKATTAD30 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_subsystem_mdm_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_subsystem_mdm_1_0 from xilinx.com:ip:mdm:3.1 (Rev. 1) to xilinx.com:ip:mdm:3.2
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'mb_subsystem_mdm_1_0'.
+
+
+-upgrade has added interface 'CLK.M_AXIS_ACLK'
+-upgrade has added interface 'M_AXIS'
+-upgrade has added interface 'RST.M_AXIS_ARESETN'
+-upgrade has added interface 'TRACE'
+
+3. Upgrade messages
+-------------------
+
+Added parameter C_TRACE_OUTPUT with value 0
+Added parameter C_TRACE_DATA_WIDTH with value 32
+Added parameter C_TRACE_CLK_FREQ_HZ with value 200000000
+Added parameter C_TRACE_CLK_OUT_PHASE with value 90
+Added parameter C_M_AXIS_DATA_WIDTH with value 32
+Added parameter C_M_AXIS_ID_WIDTH with value 5
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Thu Sep 18 11:27:20 2014
+| Host         : XHDKATTAD30 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_subsystem_mdm_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_subsystem_mdm_1_0 from xilinx.com:ip:mdm:3.0 (Rev. 2) to xilinx.com:ip:mdm:3.1 (Rev. 1)
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'mb_subsystem_mdm_1_0'.
+
+
+-upgrade has added interface 'M_AXI'
+-upgrade has added interface 'LMB_0'
+-upgrade has added interface 'LMB_1'
+-upgrade has added interface 'LMB_2'
+-upgrade has added interface 'LMB_3'
+-upgrade has added interface 'LMB_4'
+-upgrade has added interface 'LMB_5'
+-upgrade has added interface 'LMB_6'
+-upgrade has added interface 'LMB_7'
+-upgrade has added interface 'LMB_8'
+-upgrade has added interface 'LMB_9'
+-upgrade has added interface 'LMB_10'
+-upgrade has added interface 'LMB_11'
+-upgrade has added interface 'LMB_12'
+-upgrade has added interface 'LMB_13'
+-upgrade has added interface 'LMB_14'
+-upgrade has added interface 'LMB_15'
+-upgrade has added interface 'LMB_16'
+-upgrade has added interface 'LMB_17'
+-upgrade has added interface 'LMB_18'
+-upgrade has added interface 'LMB_19'
+-upgrade has added interface 'LMB_20'
+-upgrade has added interface 'LMB_21'
+-upgrade has added interface 'LMB_22'
+-upgrade has added interface 'LMB_23'
+-upgrade has added interface 'LMB_24'
+-upgrade has added interface 'LMB_25'
+-upgrade has added interface 'LMB_26'
+-upgrade has added interface 'LMB_27'
+-upgrade has added interface 'LMB_28'
+-upgrade has added interface 'LMB_29'
+-upgrade has added interface 'LMB_30'
+-upgrade has added interface 'LMB_31'
+-upgrade has added interface 'CLK.M_AXI_ACLK'
+-upgrade has added interface 'RST.M_AXI_ARESETN'
+-upgrade has added interface 'RST.Debug_SYS_Rst'
+-upgrade has added interface 'TRIG_IN_0'
+-upgrade has added interface 'TRIG_OUT_0'
+-upgrade has added interface 'TRIG_IN_1'
+-upgrade has added interface 'TRIG_OUT_1'
+-upgrade has added interface 'TRIG_IN_2'
+-upgrade has added interface 'TRIG_OUT_2'
+-upgrade has added interface 'TRIG_IN_3'
+-upgrade has added interface 'TRIG_OUT_3'
+
+3. Upgrade messages
+-------------------
+
+Added parameter C_DBG_REG_ACCESS with value 0
+Added parameter C_DBG_MEM_ACCESS with value 0
+Added parameter C_USE_CROSS_TRIGGER with value 0
+Added parameter C_TRIG_IN_PORTS with value 1
+Added parameter C_TRIG_OUT_PORTS with value 1
+Added parameter C_S_AXI_ACLK_FREQ_HZ with value 100000000
+Added parameter C_M_AXI_ADDR_WIDTH with value 32
+Added parameter C_M_AXI_DATA_WIDTH with value 32
+Added parameter C_M_AXI_THREAD_ID_WIDTH with value 1
+Added parameter C_DATA_SIZE with value 32
+

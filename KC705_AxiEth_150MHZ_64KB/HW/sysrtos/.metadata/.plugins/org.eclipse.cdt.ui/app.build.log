@@ -1,0 +1,43 @@
+
+**** Build of configuration Debug for project app ****
+
+make all 
+Building file: ../src/FreeRTOS-main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../app_bsp/microblaze_1/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v8.40.b -mno-xl-soft-mul -mhard-float -MMD -MP -MF"src/FreeRTOS-main.d" -MT"src/FreeRTOS-main.d" -o"src/FreeRTOS-main.o" "../src/FreeRTOS-main.c"
+../src/FreeRTOS-main.c: In function ‘main’:
+../src/FreeRTOS-main.c:168:2: warning: implicit declaration of function ‘xil_printf’ [-Wimplicit-function-declaration]
+Finished building: ../src/FreeRTOS-main.c
+../src/FreeRTOS-main.c: In function ‘prvQueueSendTask’:
+ 
+../src/FreeRTOS-main.c:234:4: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+Building target: app.elf
+../src/FreeRTOS-main.c:234:4: warning: incompatible implicit declaration of built-in function ‘exit’ [enabled by default]
+Invoking: MicroBlaze gcc linker
+../src/FreeRTOS-main.c: In function ‘prvQueueReceiveTask’:
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../app_bsp/microblaze_1/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v8.40.b -mno-xl-soft-mul -mhard-float -o"app.elf"  ./src/FreeRTOS-main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+../src/FreeRTOS-main.c:266:4: warning: incompatible implicit declaration of built-in function ‘exit’ [enabled by default]
+../src/FreeRTOS-main.c: At top level:
+../src/FreeRTOS-main.c:207:13: warning: ‘vSoftwareTimerCallback’ defined but not used [-Wunused-function]
+../src/FreeRTOS-main.c:148:21: warning: ‘xExampleSoftwareTimer’ defined but not used [-Wunused-variable]
+Finished building target: app.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app.elf  |tee "app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78860	   1720	  82748	 163328	  27e00	app.elf
+Finished building: app.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck app.elf -hw ../../hw_platform_0/system.xml -pe microblaze_1  |tee "app.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.4 Build EDK_P.49d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_1
+app.elf 
+
+ELF file	: app.elf
+elfcheck passed.
+Finished building: app.elf.elfcheck
+ 

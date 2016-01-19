@@ -1,0 +1,14 @@
+#Tue Dec 11 14:32:47 IST 2012
+com.xilinx.sdk.linkgen.prefs.app\:.sdata=mig_7series_1
+com.xilinx.sdk.linkgen.prefs.app\:.data=mig_7series_1
+com.xilinx.sdk.linkgen.prefs.app\:Stack=mig_7series_1
+com.xilinx.sdk.linkgen.prefs.app\:.bss=mig_7series_1
+com.xilinx.sdk.linkgen.prefs.app\:Heap=mig_7series_1
+com.xilinx.sdk.linkgen.prefs.app\:.sdata2=mig_7series_1
+com.xilinx.sdk.linkgen.prefs.app\:Stack-size=1024
+com.xilinx.sdk.linkgen.prefs.app\:.text=mig_7series_1
+com.xilinx.sdk.linkgen.prefs.app\:.rodata=mig_7series_1
+com.xilinx.sdk.linkgen.prefs.app\:Heap-size=1024
+eclipse.preferences.version=1
+com.xilinx.sdk.linkgen.prefs.app\:.sbss2=mig_7series_1
+com.xilinx.sdk.linkgen.prefs.app\:.sbss=mig_7series_1

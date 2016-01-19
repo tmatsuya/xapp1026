@@ -1,0 +1,59 @@
+12:06:39 INFO  : Processing command line option -hwspec C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk/mb_subsystem_wrapper.hdf.
+12:06:45 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.3/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+12:07:26 INFO  : Saving repository preferences.
+12:07:26 INFO  : Reading in cores from local repositories: 
+		 C:\PROJECT_FOR_RELEASE\repo_mb
+12:07:26 INFO  : Cleaning BSP projects in the workspace.
+12:07:28 INFO  : Saving repository preferences.
+12:10:08 INFO  : Refreshed build settings on project raw_apps
+12:11:35 INFO  : Refreshed build settings on project raw_apps
+12:18:07 INFO  : Refreshed build settings on project socket_apps
+14:35:46 INFO  : FPGA configured successfully with bitstream "C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk/mb_subsystem_wrapper_hw_platform_0/download.bit"
+14:39:36 INFO  : Processor reset is completed for microblaze_0
+14:39:44 INFO  : Application is downloaded for microblaze_0. (C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\raw_apps\Debug\raw_apps.elf)
+14:54:10 INFO  : Processor reset is completed for microblaze_0
+14:54:17 INFO  : Application is downloaded for microblaze_0. (C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\raw_apps\Debug\raw_apps.elf)
+15:22:04 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:32:05 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.3/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+11:32:22 INFO  : Restoring local repository preferences: 
+		 C:\PROJECT_FOR_RELEASE\repo_mb
+11:34:50 INFO  : Saving repository preferences.
+11:34:50 INFO  : Reading in cores from local repositories: 
+		 C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\repo
+11:34:50 INFO  : Cleaning BSP projects in the workspace.
+11:34:54 INFO  : Saving repository preferences.
+11:36:21 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:36:21 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:36:21 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:36:21 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:36:21 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:36:21 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:39:22 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\raw_apps_bsp\system.mss
+11:39:22 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\raw_apps_bsp\system.mss
+11:39:22 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\raw_apps_bsp\system.mss
+11:39:22 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\raw_apps_bsp\system.mss
+11:39:22 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\raw_apps_bsp\system.mss
+11:39:22 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\raw_apps_bsp\system.mss
+11:39:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:39:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:39:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:39:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:39:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:39:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:39:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:39:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:39:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:41:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:41:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:41:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:41:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:41:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:41:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:41:39 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\project_150MHz\project_2.sdk\socket_apps_bsp\system.mss
+11:45:16 INFO  : FPGA configured successfully with bitstream "C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/SW/mb_subsystem_wrapper_hw_platform_0/download.bit"
+12:09:20 INFO  : FPGA configured successfully with bitstream "C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/SW/mb_subsystem_wrapper_hw_platform_0/download.bit"
+12:09:57 INFO  : Processor reset is completed for microblaze_0
+12:10:04 INFO  : Application is downloaded for microblaze_0. (C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\SW\raw_apps\Debug\raw_apps.elf)
+12:13:24 INFO  : Processor reset is completed for microblaze_0
+12:13:32 INFO  : Application is downloaded for microblaze_0. (C:\PROJECT_FOR_RELEASE\KC705_150MHZ_64KB\SW\socket_apps\Debug\socket_apps.elf)
+12:16:37 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

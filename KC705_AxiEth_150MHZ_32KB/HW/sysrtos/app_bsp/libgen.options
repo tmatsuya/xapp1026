@@ -1,0 +1,3 @@
+PROCESSOR=microblaze_1
+REPOSITORIES=-lp ../lib
+HWSPEC=../hw_platform_0/system.xml

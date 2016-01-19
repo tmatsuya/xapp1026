@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="bootloop" key="mb_subsystem_wrapper_hw_platform_0-mb_subsystem_i/microblaze_0-initElf"/>
+	<item value="mb_subsystem_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="mb_subsystem_wrapper.mmi" key="mb_subsystem_wrapper_hw_platform_0-bmmFile"/>
+	<item value="mb_subsystem_wrapper.bit" key="mb_subsystem_wrapper_hw_platform_0-bitFile"/>
+	<item value="Local" key="mb_subsystem_wrapper_hw_platform_0-target"/>
+</section>

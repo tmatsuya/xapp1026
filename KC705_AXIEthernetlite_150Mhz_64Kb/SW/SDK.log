@@ -1,0 +1,51 @@
+17:36:24 WARN  : Unable to obtain port 2450 for use by XSDB Server, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+17:36:24 WARN  : Unable to obtain port 2457 for use by XSDB Server, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+17:36:24 WARN  : Unable to obtain port 2464 for use by XSDB Server, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+17:36:25 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.3/scripts/xsdb/xsdb/xsdb-server.tcl 2471
+17:39:49 INFO  : Project rocket_apps_bsp was a BSP project. Please update references.
+17:39:49 ERROR : SDK has detected that project rocket_apps_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references.
+17:40:05 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:05 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:05 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:05 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:05 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:05 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:07 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:07 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:07 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:07 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:07 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:07 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:07 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:07 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:40:07 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Design_checkkc705\project_1\project_1.sdk\socket_apps_bsp\system.mss
+17:43:19 WARN  : Unable to obtain port 2450 for use by XSDB Server, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+17:43:19 WARN  : Unable to obtain port 2457 for use by XSDB Server, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+17:43:19 WARN  : Unable to obtain port 2464 for use by XSDB Server, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+17:43:20 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.3/scripts/xsdb/xsdb/xsdb-server.tcl 2471
+17:43:56 INFO  : Saving repository preferences.
+17:43:56 INFO  : Reading in cores from local repositories: 
+		 C:\PROJECT_FOR_RELEASE\KC705_AXIEthernetlite_150Mhz_64Kb_cache\repo
+17:43:56 INFO  : Cleaning BSP projects in the workspace.
+17:43:57 INFO  : Saving repository preferences.
+17:47:44 INFO  : Refreshed build settings on project raw_apps
+17:58:03 ERROR :  [Hsi 55-1440] Error(s) while running DRCs.
+17:58:03 ERROR : Error generating bsp sources: Failed to generate BSP.
+17:58:03 ERROR : Failed to regenerate sources for BSP project socket_apps_bsp
+org.eclipse.core.runtime.CoreException: Internal error occurred while generating bsp sources. Please check the SDK Log view for further details.
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:178)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+17:58:12 INFO  : Refreshed build settings on project socket_apps
+18:02:16 INFO  : Refreshed build settings on project socket_apps
+18:09:58 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+18:11:15 INFO  : FPGA configured successfully with bitstream "C:/PROJECT_FOR_RELEASE/KC705_AXIEthernetlite_150Mhz_64Kb_cache/SW/mb_ethernet_wrapper_hw_platform_0/download.bit"
+18:15:03 INFO  : Processor reset is completed for microblaze_0
+18:15:11 INFO  : Application is downloaded for microblaze_0. (C:\PROJECT_FOR_RELEASE\KC705_AXIEthernetlite_150Mhz_64Kb_cache\SW\raw_apps\Debug\raw_apps.elf)
+18:20:47 INFO  : Processor reset is completed for microblaze_0
+18:20:55 INFO  : Application is downloaded for microblaze_0. (C:\PROJECT_FOR_RELEASE\KC705_AXIEthernetlite_150Mhz_64Kb_cache\SW\socket_apps\Debug\socket_apps.elf)
+18:25:18 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

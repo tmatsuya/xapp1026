@@ -1,0 +1,45 @@
+16:10:47 INFO  : Processing command line option -hwspec C:/PROJECT_FOR_RELEASE/zc702_GigE/HW/project_1/project_1.sdk/design_1_wrapper.hdf.
+16:10:52 WARN  : Unable to obtain port 2450 for use by XSDB Server, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+16:10:53 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.3/scripts/xsdb/xsdb/xsdb-server.tcl 2457
+16:14:32 INFO  : Saving repository preferences.
+16:14:32 INFO  : Reading in cores from local repositories: 
+		 C:\PROJECT_FOR_RELEASE\zc702_GigE\repo
+16:14:33 INFO  : Cleaning BSP projects in the workspace.
+16:14:34 INFO  : Saving repository preferences.
+16:18:39 INFO  : Refreshed build settings on project raw_apps
+16:25:41 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+16:25:58 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for standalone
+16:32:52 INFO  : ps7_init is completed.
+16:32:52 INFO  : ps7_post_config is completed.
+16:32:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:32:58 INFO  : Memory regions updated for context APU
+16:32:58 INFO  : Application is downloaded for ps7_cortexa9_0. (C:\PROJECT_FOR_RELEASE\zc702_GigE\HW\project_1\project_1.sdk\raw_apps\Debug\raw_apps.elf)
+16:37:51 INFO  : ps7_init is completed.
+16:37:51 INFO  : ps7_post_config is completed.
+16:37:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:37:56 INFO  : Memory regions updated for context APU
+16:37:57 INFO  : Application is downloaded for ps7_cortexa9_0. (C:\PROJECT_FOR_RELEASE\zc702_GigE\HW\project_1\project_1.sdk\raw_apps\Debug\raw_apps.elf)
+18:53:58 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+18:54:36 INFO  : ps7_init is completed.
+18:54:36 INFO  : ps7_post_config is completed.
+18:54:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:54:40 INFO  : Memory regions updated for context APU
+18:54:41 INFO  : Application is downloaded for ps7_cortexa9_0. (C:\PROJECT_FOR_RELEASE\zc702_GigE\HW\project_1\project_1.sdk\raw_apps\Debug\raw_apps.elf)
+18:59:21 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:32:55 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.3/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+19:33:09 INFO  : Restoring local repository preferences: 
+		 C:\PROJECT_FOR_RELEASE\zc702_GigE\repo
+19:33:17 INFO  : Saving repository preferences.
+19:33:19 INFO  : Saving repository preferences.
+19:33:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:34:02 INFO  : Memory regions updated for context APU
+19:34:02 INFO  : Application is downloaded for ps7_cortexa9_0. (C:\PROJECT_FOR_RELEASE\zc702_GigE\HW\project_1\project_1.sdk\raw_apps\Debug\raw_apps.elf)
+19:37:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:38:03 INFO  : Memory regions updated for context APU
+19:38:04 INFO  : Application is downloaded for ps7_cortexa9_0. (C:\PROJECT_FOR_RELEASE\zc702_GigE\HW\project_1\project_1.sdk\socket_apps\Debug\socket_apps.elf)
+19:40:11 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

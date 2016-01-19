@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.3 (64-bit)
+# SW Build 1018564 on Mon Sep 15 18:49:35 MDT 2014
+# 
+# Start of session at: Tue Sep 23 15:22:07 2014
+# Process ID: 84672
+# Log file: C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk/webtalk/webtalk.log
+# Journal file: C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

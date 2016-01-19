@@ -1,0 +1,114 @@
+#
+# Copyright (C) 2012 Xilinx, Inc.
+#
+# This file is part of the port for FreeRTOS made by Xilinx to allow FreeRTOS
+# to operate with Xilinx Zynq devices.
+#
+# This file is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License (version 2) as published by the
+# Free Software Foundation AND MODIFIED BY the FreeRTOS exception 
+# (see text further below).
+#
+# This file is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+# or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+# more details.
+#
+# You should have received a copy of the GNU General Public License; if not it
+# can be viewed here: <http://www.gnu.org/licenses/>
+#
+# The following exception language was found at 
+# http://www.freertos.org/a00114.html on May 8, 2012.
+#
+# GNU General Public License Exception
+#
+# Any FreeRTOS source code, whether modified or in its original release form,
+# or whether in whole or in part, can only be distributed by you under the
+# terms of the GNU General Public License plus this exception. An independent
+# module is a module which is not derived from or based on FreeRTOS.
+#
+# EXCEPTION TEXT:
+#
+# Clause 1
+#
+# Linking FreeRTOS statically or dynamically with other modules is making a
+# combined work based on FreeRTOS. Thus, the terms and conditions of the
+# GNU General Public License cover the whole combination.
+#
+# As a special exception, the copyright holder of FreeRTOS gives you permission
+# to link FreeRTOS with independent modules that communicate with FreeRTOS
+# solely through the FreeRTOS API interface, regardless of the license terms
+# of these independent modules, and to copy and distribute the resulting
+# combined work under terms of your choice, provided that 
+#
+# Every copy of the combined work is accompanied by a written statement that
+# details to the recipient the version of FreeRTOS used and an offer by
+# yourself to provide the FreeRTOS source code (including any modifications
+# you may have  made) should the recipient request it.
+# The combined work is not itself an RTOS, scheduler, kernel or related product.
+# The independent modules add significant and primary functionality to FreeRTOS
+# and do not merely extend the existing functionality already present 
+# in FreeRTOS.
+#
+# Clause 2
+#
+# FreeRTOS may not be used for any competitive or comparative purpose,
+# including the publication of any form of run time or compile time metric,
+# without the express permission of Real Time Engineers Ltd. (this is the norm
+# within the industry and is intended to ensure information accuracy).
+#
+
+OPTION psf_version = 2.1.0 ; 
+BEGIN OS freertos_zynq 
+		
+  OPTION DRC = FreeRTOS_drc ; 
+  OPTION supported_peripherals = ps7_cortexa9;
+  OPTION COPYFILES = all;	
+  OPTION DEPENDS = (standalone_v4_1);
+  #OPTION APP_COMPILER_FLAGS = "-D__USE_AMP__";
+  OPTION APP_LINKER_FLAGS = "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group";
+  OPTION VERSION = 1.02.a;
+  OPTION NAME = "freertos_zynq";
+  OPTION DESC = "FreeRTOS is a popular open source RTOS";
+
+  # STDIN/STDOUT
+  PARAM name = stdin, type = peripheral_instance, requires_interface = stdin, default=none, desc = "Specify the instance name of the standard input peripheral";
+  PARAM name = stdout, type = peripheral_instance, requires_interface = stdout, default=none, desc = "Specify the instance name of the standard output peripheral";
+
+  BEGIN CATEGORY kernel_behavior
+    PARAM name = kernel_behavior, type = bool, default = true, desc = "Parameters relating to the kernel behavior", permit = user;
+    PARAM name = use_preemption, type = bool, default = true, desc = "Set to true to use the preemptive scheduler, or false to use the cooperative scheduler.";
+    PARAM name = tick_rate, type = int, default = 200, desc = "Number of ticks per sec";
+    PARAM name = idle_yield, type = bool, default = true, desc = "Set to true if the Idle task should yield if another idle priority task is able to run, or false if the idle task should always use its entire time slice unless it is preempted.";
+    PARAM name = max_priorities, type = int, default = 4, desc = "The number of task priorities that will be available.  Priorities can be assigned from zero to (max_priorities - 1)";
+    PARAM name = minimal_stack_size, type = int, default = 120, desc = "The size of the stack allocated to the Idle task. Also used by standard demo and test tasks found in the main FreeRTOS download.";
+    PARAM name = total_heap_size, type = int, default = 65536, desc = "Only used if heap_1.c or heap_2.c is included in the project.  Sets the amount of RAM reserved for use by the kernel - used when tasks, queues and semaphores are created.";
+    PARAM name = max_task_name_len, type = int, default = 8, desc = "The maximum number of characters that can be in the name of a task.";
+  END CATEGORY
+  
+  BEGIN CATEGORY kernel_features
+	PARAM name = kernel_features, type = bool, default = true, desc = "Include or exclude kernel features", permit = user;
+	PARAM name = use_mutexes, type = bool, default = true, desc = "Set to true to include mutex functionality, or false to exclude mutex functionality.";
+	PARAM name = use_recursive_mutexes, type = bool, default = true, desc = "Set to true to include recursive mutex functionality, or false to exclude recursive mutex functionality.";
+	PARAM name = use_counting_semaphores, type = bool, default = true, desc = "Set to true to include counting semaphore functionality, or false to exclude recursive mutex functionality.";
+	PARAM name = queue_registry_size, type = int, default = 10, desc = "The maximum number of queues that can be registered at any one time. Registered queues can be viewed in the kernel aware debugger plug-in.";
+	PARAM name = use_trace_facility, type = bool, default = true, desc = "Set to true to include the legacy trace functionality, and a few other features.  traceMACROS are the preferred method of tracing now.";
+  END CATEGORY
+  
+  BEGIN CATEGORY hook_functions
+	PARAM name = hook_functions, type = bool, default = true, desc = "Include or exclude application defined hook (callback) functions.  Callback functions must be defined by the application that is using FreeRTOS", permit = user;
+    PARAM name = use_idle_hook, type = bool, default = false, desc = "Set to true for the kernel to call vApplicationIdleHook() on each iteration of the idle task.  The application must provide an implementation of vApplicationIdleHook().";
+    PARAM name = use_tick_hook, type = bool, default = false, desc = "Set to true for the kernel to call vApplicationTickHook() during each tick interrupt.  The application must provide an implementation of vApplicationTickHook().";
+	PARAM name = use_malloc_failed_hook, type = bool, default = true, desc = "Only used if heap_1.c, heap_2.c or heap_3.c is included in the project.  Set to true for the kernel to call vApplicationMallocFailedHookHook() if there is insufficient FreeRTOS heap available for a task, queue or semaphore to be created.  The application must provide an implementation of vApplicationMallocFailedHook().";
+	PARAM name = check_for_stack_overflow, type = int, default = 2, desc = "Set to 1 to include basic run time task stack checking.  Set to 2 to include more comprehensive run time task stack checking.";
+  END CATEGORY
+
+  BEGIN CATEGORY software_timers
+	PARAM name = software_timers, type = bool, default = true, desc = "Options relating to the software timers functionality", permit = user;
+	PARAM name = use_timers, type = bool, default = true, desc = "Set to true to include software timer functionality, or false to exclude software timer functionality";
+	PARAM name = timer_task_priority, type = string, default = "(configMAX_PRIORITIES - 1)", desc = "The priority at which the software timer service/daemon task will execute.";
+	PARAM name = timer_command_queue_length, type = int, default = 10, desc = "The number of commands the timer command queue can hold at any one time.";
+	PARAM name = timer_task_stack_depth, type = string, default = "(configMINIMAL_STACK_SIZE), desc = "The size of the stack allocated to the timer service/daemon task.";
+  END CATEGORY
+  
+END OS 

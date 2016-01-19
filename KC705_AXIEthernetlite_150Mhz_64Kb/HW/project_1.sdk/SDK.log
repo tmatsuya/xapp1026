@@ -1,0 +1,10 @@
+18:32:33 INFO  : Processing command line option -hwspec C:/Design_checkkc705/project_1/project_1.sdk/mb_ethernet_wrapper.hdf.
+18:32:39 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.3/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+18:34:25 INFO  : Refreshed build settings on project rocket_apps
+18:42:13 INFO  : Refreshed build settings on project socket_apps
+09:52:17 INFO  : FPGA configured successfully with bitstream "C:/Design_checkkc705/project_1/project_1.sdk/mb_ethernet_wrapper_hw_platform_0/download.bit"
+09:56:01 INFO  : Processor reset is completed for microblaze_0
+09:56:09 INFO  : Application is downloaded for microblaze_0. (C:\Design_checkkc705\project_1\project_1.sdk\rocket_apps\Debug\rocket_apps.elf)
+09:59:21 INFO  : Processor reset is completed for microblaze_0
+09:59:29 INFO  : Application is downloaded for microblaze_0. (C:\Design_checkkc705\project_1\project_1.sdk\socket_apps\Debug\socket_apps.elf)
+18:39:03 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

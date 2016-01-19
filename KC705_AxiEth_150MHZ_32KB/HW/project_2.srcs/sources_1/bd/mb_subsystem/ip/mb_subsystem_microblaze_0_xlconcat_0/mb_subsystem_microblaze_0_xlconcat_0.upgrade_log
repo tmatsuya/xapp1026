@@ -1,0 +1,30 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Thu Sep 18 11:27:21 2014
+| Host         : XHDKATTAD30 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_subsystem_microblaze_0_xlconcat_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_subsystem_microblaze_0_xlconcat_0 from xilinx.com:ip:xlconcat:1.0 to xilinx.com:ip:xlconcat:2.1
+
+2. Upgrade messages
+-------------------
+
+Set parameter IN0_WIDTH to value 1
+Renamed port In0 to In4
+Set parameter IN1_WIDTH to value 1
+Renamed port In1 to In3
+Set parameter IN2_WIDTH to value 1
+Renamed port In2 to In2
+Set parameter IN3_WIDTH to value 1
+Renamed port In3 to In1
+Set parameter IN4_WIDTH to value 1
+Renamed port In4 to In0
+

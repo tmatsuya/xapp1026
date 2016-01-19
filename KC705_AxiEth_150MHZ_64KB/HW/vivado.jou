@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2014.3 (64-bit)
+# SW Build 1018564 on Mon Sep 15 19:04:16 MDT 2014
+# IP Build 1018438 on Mon Sep 15 16:10:11 MDT 2014
+# Start of session at: Tue Sep 23 10:47:00 2014
+# Process ID: 22280
+# Log file: C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/vivado.log
+# Journal file: C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.xpr
+open_bd_design {C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd}
+startgroup
+set_property -dict [list CONFIG.C_CACHE_BYTE_SIZE {65536} CONFIG.C_DCACHE_BYTE_SIZE {65536}] [get_bd_cells microblaze_0]
+endgroup
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+file mkdir C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk
+file copy -force C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.runs/impl_1/mb_subsystem_wrapper.sysdef C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk/mb_subsystem_wrapper.hdf
+
+file copy -force C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.runs/impl_1/mb_subsystem_wrapper.sysdef C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk/mb_subsystem_wrapper.hdf
+
+launch_sdk -workspace C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk -hwspec C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz/project_2.sdk/mb_subsystem_wrapper.hdf

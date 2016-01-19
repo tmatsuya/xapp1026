@@ -1,0 +1,1 @@
+mfsgen -cvbfs ../image.mfs 3000 *
